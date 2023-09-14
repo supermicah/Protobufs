@@ -4,7 +4,7 @@
 // - protoc             v4.24.3
 // source: news.proto
 
-package news_micah_wiki
+package news
 
 import (
 	context "context"
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	SearchService_Search_FullMethodName = "/news.micah.wiki.SearchService/Search"
+	SearchService_Search_FullMethodName = "/news.SearchService/Search"
 )
 
 // SearchServiceClient is the client API for SearchService service.
@@ -96,7 +96,7 @@ func _SearchService_Search_Handler(srv interface{}, ctx context.Context, dec fun
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var SearchService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "news.micah.wiki.SearchService",
+	ServiceName: "news.SearchService",
 	HandlerType: (*SearchServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
