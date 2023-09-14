@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package news.micah.wiki;
+option go_package = "news.micah.wiki";
+
+message News {
+  int32 id = 1;
+  
+  string name = 2;
+
+  int32 state = 3;
+
+}
+
+message NewsRequest {
+  string name = 1;
+}
+
+message NewsResponse {
+  repeated News  news_list = 1;
+}
+
+service SearchService {
+  rpc Search (NewsRequest) returns (NewsResponse);
+}
