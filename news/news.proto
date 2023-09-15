@@ -1,7 +1,7 @@
 syntax = "proto3";
 import public "google/protobuf/timestamp.proto";
 
-option go_package = "micah/wiki/news";
+option go_package = "./news";
 option java_multiple_files = true;
 option java_package = "wiki.micah.news";
 option java_outer_classname = "News";
